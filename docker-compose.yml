@@ -1,0 +1,13 @@
+services:
+  wim:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      WIM_ADMIN_TOKEN: ${WIM_ADMIN_TOKEN}
+      WIM_DB_PATH: /data/wim.db
+      WIM_DEFAULT_MODEL: ${WIM_DEFAULT_MODEL:-gpt-6.1-terra}
+    volumes:
+      - wim-data:/data
+volumes:
+  wim-data:

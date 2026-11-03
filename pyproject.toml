@@ -1,0 +1,8 @@
+[project]
+name = "wim-bot"
+version = "1.0.1"
+description = "What'd I Miss? Open-source Step 1 curriculum gap analysis with a private reference corpus."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

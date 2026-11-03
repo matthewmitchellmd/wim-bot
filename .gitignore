@@ -1,0 +1,38 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Private/copyrighted corpus and generated indexes
+private_corpus/*
+!private_corpus/.gitkeep
+data/wim.db
+data/*.db
+data/*.sqlite*
+uploads/
+
+# Secrets / user material
+*.key
+*.pem
+
+# Private curriculum configuration
+private_config/*
+!private_config/.gitkeep
+
+# Deployment artifacts and backups
+*.apkg
+*.anki2
+*.anki21
+*.anki21b
+*.db-wal
+*.db-shm
+*.db-journal
+*.bak
+backups/
+*.tar.gz
+
+# Common private curriculum seed names
+*private_seed*.json
+*curriculum_seed.private*.json
